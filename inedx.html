@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+
+<html style="margin:0; padding:0;">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background: #000;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    :root {
+      --logo-width: 420px;
+    }
+
+    .logo-img {
+      width: var(--logo-width);
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .card {
+      width: 300px;
+      height: 180px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 24px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+    }
+
+    .background-container {
+      position: relative;
+      min-height: 100vh;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body style="--logo-width: 420px; font-family: 'Segoe UI', sans-serif;">
+  <!-- Background Section -->
+  <div class="background-container">
+
+    <!-- Wave Pattern -->
+    <div style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background: url('https://www.svgrepo.com/show/382000/waves.svg') no-repeat top left;
+      background-size: contain;
+      opacity: 0.3;
+    "></div>
+
+    <!-- Logo Image -->
+    <<div class="header-container">
+        <img src="NEX.png" alt="NExfar Logo" class="logo">
+        <div class="columns">
+      </div>
+      
+      <style>
+        .header-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1px; /* Sesuaikan jarak antara logo dan kolom */
+        }
+        
+        .logo {
+          width: 300px; /* Sesuaikan ukuran logo */
+          height: auto;
+          margin-bottom: 0; /* Pastikan tidak ada margin bawah */
+        }
+        
+        .columns {
+          display: flex;
+          gap: 20px; /* Jarak antar item dalam kolom */
+        }
+      </style>
+
+    <!-- Top Cards -->
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 60px;">
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+
+    <!-- Additional Cards Section -->
+    <div style="
+      padding: 60px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    ">
+      <div class="card">
+        <div>Free 0.00$</div>
+        <img src="UPLOAD_CARD1_IMAGE_HERE" alt="Free Icon" style="width: 80px; margin-top: 1px;">
+      </div>
+      <div class="card">
+        <div>Fast</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
